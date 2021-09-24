@@ -1,8 +1,9 @@
 import React from 'react'
+import { Link } from "react-router-dom";
 
 export const Body = () => {
     return (
-        <div className="bg-info bg-gradient">
+        <div className="bg-info bg-gradient ">
         <h1 className="text-center">Welcome!</h1>
         <p className="text-center"> 
             Hi! We are here to provide the safest and the most thrilling travel experience within the pandemic.
@@ -17,17 +18,12 @@ export const Body = () => {
                     <br/>
                     Follow All state and local recommendations and requirements, including mask wearing and social distancing. To ensure safe journey
                 </p>
-                <button type="button" className="btn btn-primary btn-lg rounded-pill">click to know more</button>
+                <Link to="/covidguidelines"><button type="button" className="btn btn-primary btn-lg rounded-pill">click to know more</button></Link>
             </div>
         </div>
-        
-        <div className="container">
-            <div className="row">
-                <div className="col-sm-4">
-                </div>
-            </div>
-            
-        </div>
+        <br/>
+        <br/>
+        <br/>
         </div>
     )
 }
